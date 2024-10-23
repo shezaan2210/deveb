@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Deveb</title>
+    <link href="./output.css" rel="stylesheet">
+    <style>
+        body {
+            margin: 0; /* Remove default margin */
+        }
+        .canvas-section {
+            height: 100vh; /* Full viewport height */
+        }
+        .black-section {
+            height: 100vh; /* Full viewport height */
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="w-full overflow-hidden">
+        <!-- Sticky Canvas Section -->
+        <div class="canvas-section landing">
+            <canvas class="w-full h-full" id="canvas"></canvas>
+        </div>
+        <!-- Black Background Section -->
+        <div class="black-section relative z-10"></div>
+    </div>
+
+    <script type="module" src="/main.js"></script>
+</body>
+</html>
